@@ -1,0 +1,158 @@
+/*
+ * baymin_sun5i_reconstructed.dts
+ *
+ * 【重建文件 / RECONSTRUCTED — 非原厂产物】
+ *
+ * 目标设备: GoWild(狗尾草) 小小白 "xxb" 机器人 — AKU 版本
+ *           OTA 包名 com.gowild.xxb.robot.aku.fw
+ * SoC    : Allwinner sun5i (R8/A13 级), ARM Cortex-A8 + NEON
+ * Board  : "Baymin" (BSP 工程名 tina_baymini)
+ * Kernel : Linux 3.4.39 (OpenWrt/Tina Linux V1, Barrier Breaker r81)
+ *
+ * 重要前提:
+ *   该固件【不使用 Device Tree】。它使用全志 3.4 BSP 的 sys_config.fex -> script.bin 机制。
+ *   本文件是把固件中可确证的硬件信息，用 DTS 语法重新表达，
+ *   目的是给阅读/移植提供一份结构化的板级说明，【不是】从固件里提取出来的原始设备树。
+ *
+ * 标注约定:
+ *   [实测] 直接来自固件内字符串/ELF/文件内容的硬证据
+ *   [推断] 无法从本次备份确定，按 sun5i/R8 + Baymin 常见接法给出的占位值 —— 必须校正
+ */
+
+/dts-v1/;
+
+/ {
+	model = "Allwinner sun5i R8 Baymin Board (GoWild xxb-robot / AKU)";   /* [实测] */
+	compatible = "allwinner,sun5i-r8", "allwinner,sun5i";                /* [实测] */
+	#address-cells = <1>;
+	#size-cells = <1>;
+
+	chosen {
+		/* [实测] 来自 env 分区的 setargs_nand */
+		bootargs = "console=ttyS0,115200 root=/dev/nandd rootwait init=/etc/preinit "
+		           "ion_cma_512m=32m ion_cma_1g=176m ion_carveout_512m=32m "
+		           "ion_carveout_1g=150m coherent_pool=4m loglevel=8";
+	};
+
+	cpus {
+		#address-cells = <1>;
+		#size-cells = <0>;
+		cpu@0 {
+			compatible = "arm,cortex-a8";        /* [实测] 构建路径 target-arm_cortex-a8+neon */
+			device_type = "cpu";
+			reg = <0>;
+		};
+	};
+
+	memory {
+		device_type = "memory";
+		reg = <0x40000000 0x20000000>;           /* [推断] 512MB；DDR 由 Boot0/U-Boot 的 dram_para 决定 */
+	};
+
+	soc {
+		compatible = "simple-bus";
+		#address-cells = <1>;
+		#size-cells = <1>;
+		ranges;
+
+		uart0: serial@01c28000 {
+			compatible = "snps,dw-apb-uart";
+			reg = <0x01c28000 0x400>;
+			/* [实测] console=ttyS0,115200 */
+			current-speed = <115200>;
+			status = "okay";
+		};
+
+		/* [实测] 内核字符串 sun5i-i2c；libcae.so 使用 /dev/i2c-1 */
+		i2c1: i2c@01c2b000 {
+			compatible = "allwinner,sun5i-i2c";
+			reg = <0x01c2b000 0x400>;
+			#address-cells = <1>;
+			#size-cells = <0>;
+			status = "okay";
+
+			/* [推断] 地址未从固件中取得，zhc_i2c_detect.ko 是运行时探测驱动 */
+			nau8540: adc@54 {
+				compatible = "nuvoton,nau8540";   /* [实测] 模块名 zhc_adc_nau8540.ko */
+				reg = <0x54>;                     /* [推断] */
+			};
+		};
+
+		/* [实测] 驱动 zhc_fpga_spi.ko / zhc_fpga_iCE40.ko，SPI 接 Lattice iCE40 */
+		spi0: spi@01c05000 {
+			compatible = "allwinner,sun5i-spi";
+			reg = <0x01c05000 0x1000>;
+			#address-cells = <1>;
+			#size-cells = <0>;
+			status = "okay";
+
+			fpga: fpga@0 {
+				compatible = "lattice,ice40ul1k-cm36a";  /* [实测] 位流头部 */
+				reg = <0>;
+				spi-max-frequency = <1000000>;           /* [推断] */
+			};
+		};
+
+		/* [实测] env: root=/dev/nandd；内核字符串 sw_nand */
+		nand0: nand@01c03000 {
+			compatible = "allwinner,sun5i-nand";
+			reg = <0x01c03000 0x1000>;
+			status = "okay";
+		};
+
+		/* [实测] 内核字符串 timer0；zhc_power.ko 使用 AXP20x */
+		pmu: pmu@34 {
+			compatible = "x-powers,axp209";     /* [推断] 由 axp20_* 推断为 AXP20x 家族 */
+			reg = <0x34>;                       /* [推断] */
+		};
+	};
+
+	/*
+	 * ===== 以下对应原厂 sys_config.fex 的各个 section =====
+	 * 段名 [实测]：zhc_gpio.ko 读 [gpio_para]，zhc_led.ko 读 [led_para]，
+	 *             zhc_fpga_iCE40.ko 读 [fpga_para]，zhc_power.ko 读 sys_config。
+	 * 具体引脚号 [推断] —— 需要真实 fex 才能确定。
+	 */
+
+	leds {
+		compatible = "gpio-leds";                  /* 对应 fex [led_para] */
+		led_red   { label = "led_red";   gpios = <&pio 1 0 0>; };  /* [推断] */
+		led_green { label = "led_green"; gpios = <&pio 1 1 0>; };  /* [推断] */
+		led_blue  { label = "led_blue";  gpios = <&pio 1 2 0>; };  /* [推断] */
+	};
+
+	fpga_ctrl {
+		/* 对应 fex [fpga_para]；名字 [实测]，编号 [推断] */
+		spi_cs0    = <&pio 3 0 0>;   /* fpga_spi_cs0 */
+		spi_cs1    = <&pio 3 1 0>;   /* fpga_spi_cs1 */
+		crest_b    = <&pio 3 2 0>;   /* fpga_crest_b   (iCE40 CRESET_B) */
+		cdone_irq  = <&pio 3 3 6>;   /* fpga_cdone_data_IRQ, IRQ_EINT16 */
+	};
+
+	power_rails {
+		/* 对应 zhc_power.ko 的电源轨名 [实测]；GPIO 编号 [推断] */
+		power_adc  = <&pio 4 0 0>;
+		power_dcin = <&pio 4 1 0>;
+		power_fpga = <&pio 4 2 0>;
+		power_amp  = <&pio 4 3 0>;
+		power_lcd  = <&pio 4 4 0>;
+		power_led  = <&pio 4 5 0>;
+		axp20_fpga = <&pmu>;
+		axp20_led  = <&pmu>;
+		axp20_ldo4 = <&pmu>;
+		axp20_ldo5 = <&pmu>;
+	};
+
+	/* 直连接口（非 fex，按接口名 [实测]） */
+	wireless {
+		compatible = "brcm,bcm43438";             /* [实测] AP6212 / fw_bcm43438a0.bin */
+		status = "okay";
+	};
+
+	display {
+		/* [实测] boot-res 中 18 张 BMP 全为 128x160；应用帧缓冲 stride 256 */
+		width  = <128>;
+		height = <160>;
+		stride = <256>;
+	};
+};

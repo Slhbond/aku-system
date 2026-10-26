@@ -1,0 +1,634 @@
+=================== ELF INVENTORY ====================
+### xxb_robot_sw_server   [253449 bytes]
+ELF 32-bit LSB executable, ARM, EABI5 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, no section header
+      Class:                             ELF32
+      Type:                              EXEC (Executable file)
+      Machine:                           ARM
+      Entry point address:               0xbe44
+  -- NEEDED --
+     0x00000001 (NEEDED)                     Shared library: [libpthread.so.0]
+     0x00000001 (NEEDED)                     Shared library: [libdl.so.0]
+     0x00000001 (NEEDED)                     Shared library: [librt.so.0]
+     0x00000001 (NEEDED)                     Shared library: [libcurl.so.4]
+     0x00000001 (NEEDED)                     Shared library: [libcae.so]
+     0x00000001 (NEEDED)                     Shared library: [libm.so.0]
+     0x00000001 (NEEDED)                     Shared library: [libmsc.so]
+     0x00000001 (NEEDED)                     Shared library: [libasound.so.2]
+     0x00000001 (NEEDED)                     Shared library: [libzhc_audio.so]
+     0x00000001 (NEEDED)                     Shared library: [libjson-c.so.2]
+     0x00000001 (NEEDED)                     Shared library: [libqr.so.1]
+     0x00000001 (NEEDED)                     Shared library: [libgcc_s.so.1]
+     0x00000001 (NEEDED)                     Shared library: [libc.so.0]
+
+### xxb_robot_hw_server   [12050 bytes]
+ELF 32-bit LSB executable, ARM, EABI5 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, no section header
+      Class:                             ELF32
+      Type:                              EXEC (Executable file)
+      Machine:                           ARM
+      Entry point address:               0x95a4
+  -- NEEDED --
+     0x00000001 (NEEDED)                     Shared library: [libpthread.so.0]
+     0x00000001 (NEEDED)                     Shared library: [libgowild_wifi.so]
+     0x00000001 (NEEDED)                     Shared library: [libgowild_smartlink.so]
+     0x00000001 (NEEDED)                     Shared library: [libgowild_network_manager.so]
+     0x00000001 (NEEDED)                     Shared library: [libgowild_keyevent.so]
+     0x00000001 (NEEDED)                     Shared library: [libwifimg.so]
+     0x00000001 (NEEDED)                     Shared library: [libgowild-hw-common.so]
+     0x00000001 (NEEDED)                     Shared library: [libgowild_led.so]
+     0x00000001 (NEEDED)                     Shared library: [libgowild-hw-ipc.so]
+     0x00000001 (NEEDED)                     Shared library: [libbt_server.so]
+     0x00000001 (NEEDED)                     Shared library: [libbt_interface.so]
+     0x00000001 (NEEDED)                     Shared library: [libgowild_battery_server.so]
+     0x00000001 (NEEDED)                     Shared library: [libgw_os_update.so]
+     0x00000001 (NEEDED)                     Shared library: [libgw_download_server.so]
+     0x00000001 (NEEDED)                     Shared library: [libgw_md5.so]
+     0x00000001 (NEEDED)                     Shared library: [libgcc_s.so.1]
+     0x00000001 (NEEDED)                     Shared library: [libc.so.0]
+
+### gowild_emotion_test   [45227 bytes]
+ELF 32-bit LSB executable, ARM, EABI5 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, no section header
+      Class:                             ELF32
+      Type:                              EXEC (Executable file)
+      Machine:                           ARM
+      Entry point address:               0x964c
+  -- NEEDED --
+     0x00000001 (NEEDED)                     Shared library: [libpthread.so.0]
+     0x00000001 (NEEDED)                     Shared library: [libdl.so.0]
+     0x00000001 (NEEDED)                     Shared library: [librt.so.0]
+     0x00000001 (NEEDED)                     Shared library: [libcurl.so.4]
+     0x00000001 (NEEDED)                     Shared library: [libcae.so]
+     0x00000001 (NEEDED)                     Shared library: [libm.so.0]
+     0x00000001 (NEEDED)                     Shared library: [libmsc.so]
+     0x00000001 (NEEDED)                     Shared library: [libasound.so.2]
+     0x00000001 (NEEDED)                     Shared library: [libzhc_audio.so]
+     0x00000001 (NEEDED)                     Shared library: [libjson-c.so.2]
+     0x00000001 (NEEDED)                     Shared library: [libqr.so.1]
+     0x00000001 (NEEDED)                     Shared library: [libgcc_s.so.1]
+     0x00000001 (NEEDED)                     Shared library: [libc.so.0]
+
+### gw_network_manager_test   [2594 bytes]
+ELF 32-bit LSB executable, ARM, EABI5 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, no section header
+      Class:                             ELF32
+      Type:                              EXEC (Executable file)
+      Machine:                           ARM
+      Entry point address:               0x8604
+  -- NEEDED --
+     0x00000001 (NEEDED)                     Shared library: [libgowild-hw-common.so]
+     0x00000001 (NEEDED)                     Shared library: [libpthread.so.0]
+     0x00000001 (NEEDED)                     Shared library: [libgowild_network_manager.so]
+     0x00000001 (NEEDED)                     Shared library: [libwifimg.so]
+     0x00000001 (NEEDED)                     Shared library: [libgowild_wifi.so]
+     0x00000001 (NEEDED)                     Shared library: [libgowild_smartlink.so]
+     0x00000001 (NEEDED)                     Shared library: [libgcc_s.so.1]
+     0x00000001 (NEEDED)                     Shared library: [libc.so.0]
+
+### gw_update_app   [3610 bytes]
+ELF 32-bit LSB executable, ARM, EABI5 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, no section header
+      Class:                             ELF32
+      Type:                              EXEC (Executable file)
+      Machine:                           ARM
+      Entry point address:               0x8968
+  -- NEEDED --
+     0x00000001 (NEEDED)                     Shared library: [libc.so.0]
+     0x00000001 (NEEDED)                     Shared library: [libpolarssl.so.7]
+     0x00000001 (NEEDED)                     Shared library: [libjson-c.so.2]
+     0x00000001 (NEEDED)                     Shared library: [libcurl.so.4]
+     0x00000001 (NEEDED)                     Shared library: [libgowild-hw-common.so]
+     0x00000001 (NEEDED)                     Shared library: [libgw_download_server.so]
+     0x00000001 (NEEDED)                     Shared library: [libgw_md5.so]
+     0x00000001 (NEEDED)                     Shared library: [libpthread.so.0]
+     0x00000001 (NEEDED)                     Shared library: [libgcc_s.so.1]
+
+### gw_upgrade_fw   [3414 bytes]
+ELF 32-bit LSB executable, ARM, EABI5 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, no section header
+      Class:                             ELF32
+      Type:                              EXEC (Executable file)
+      Machine:                           ARM
+      Entry point address:               0x8828
+  -- NEEDED --
+     0x00000001 (NEEDED)                     Shared library: [libc.so.0]
+     0x00000001 (NEEDED)                     Shared library: [libpolarssl.so.7]
+     0x00000001 (NEEDED)                     Shared library: [libjson-c.so.2]
+     0x00000001 (NEEDED)                     Shared library: [libcurl.so.4]
+     0x00000001 (NEEDED)                     Shared library: [libgowild-hw-common.so]
+     0x00000001 (NEEDED)                     Shared library: [libgw_download_server.so]
+     0x00000001 (NEEDED)                     Shared library: [libgw_md5.so]
+     0x00000001 (NEEDED)                     Shared library: [libpthread.so.0]
+     0x00000001 (NEEDED)                     Shared library: [libgw_os_update.so]
+     0x00000001 (NEEDED)                     Shared library: [libgcc_s.so.1]
+
+### md5_test   [7042 bytes]
+ELF 32-bit LSB executable, ARM, EABI5 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, no section header
+      Class:                             ELF32
+      Type:                              EXEC (Executable file)
+      Machine:                           ARM
+      Entry point address:               0x8644
+  -- NEEDED --
+     0x00000001 (NEEDED)                     Shared library: [libgw_md5.so]
+     0x00000001 (NEEDED)                     Shared library: [libgcc_s.so.1]
+     0x00000001 (NEEDED)                     Shared library: [libc.so.0]
+
+### qrencode_test   [50719 bytes]
+ELF 32-bit LSB executable, ARM, EABI5 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, no section header
+      Class:                             ELF32
+      Type:                              EXEC (Executable file)
+      Machine:                           ARM
+      Entry point address:               0x964c
+  -- NEEDED --
+     0x00000001 (NEEDED)                     Shared library: [libpthread.so.0]
+     0x00000001 (NEEDED)                     Shared library: [libdl.so.0]
+     0x00000001 (NEEDED)                     Shared library: [librt.so.0]
+     0x00000001 (NEEDED)                     Shared library: [libcurl.so.4]
+     0x00000001 (NEEDED)                     Shared library: [libcae.so]
+     0x00000001 (NEEDED)                     Shared library: [libm.so.0]
+     0x00000001 (NEEDED)                     Shared library: [libmsc.so]
+     0x00000001 (NEEDED)                     Shared library: [libasound.so.2]
+     0x00000001 (NEEDED)                     Shared library: [libzhc_audio.so]
+     0x00000001 (NEEDED)                     Shared library: [libjson-c.so.2]
+     0x00000001 (NEEDED)                     Shared library: [libqr.so.1]
+     0x00000001 (NEEDED)                     Shared library: [libgcc_s.so.1]
+     0x00000001 (NEEDED)                     Shared library: [libc.so.0]
+
+### bt_server_test   [2318 bytes]
+ELF 32-bit LSB executable, ARM, EABI5 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, no section header
+      Class:                             ELF32
+      Type:                              EXEC (Executable file)
+      Machine:                           ARM
+      Entry point address:               0x8548
+  -- NEEDED --
+     0x00000001 (NEEDED)                     Shared library: [libgowild-hw-common.so]
+     0x00000001 (NEEDED)                     Shared library: [libbsa.so]
+     0x00000001 (NEEDED)                     Shared library: [libbtapp.so]
+     0x00000001 (NEEDED)                     Shared library: [libbt_interface.so]
+     0x00000001 (NEEDED)                     Shared library: [libbt_server.so]
+     0x00000001 (NEEDED)                     Shared library: [libpthread.so.0]
+     0x00000001 (NEEDED)                     Shared library: [libgcc_s.so.1]
+     0x00000001 (NEEDED)                     Shared library: [libc.so.0]
+
+### scan_wifi_ap   [3230 bytes]
+ELF 32-bit LSB executable, ARM, EABI5 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, no section header
+      Class:                             ELF32
+      Type:                              EXEC (Executable file)
+      Machine:                           ARM
+      Entry point address:               0x8678
+  -- NEEDED --
+     0x00000001 (NEEDED)                     Shared library: [libpthread.so.0]
+     0x00000001 (NEEDED)                     Shared library: [librt.so.0]
+     0x00000001 (NEEDED)                     Shared library: [libdl.so.0]
+     0x00000001 (NEEDED)                     Shared library: [libwifimg.so]
+     0x00000001 (NEEDED)                     Shared library: [libsmartlinkd_client.so]
+     0x00000001 (NEEDED)                     Shared library: [libgowild_led.so]
+     0x00000001 (NEEDED)                     Shared library: [libgowild-hw-common.so]
+     0x00000001 (NEEDED)                     Shared library: [libgcc_s.so.1]
+     0x00000001 (NEEDED)                     Shared library: [libc.so.0]
+
+### smartlink_demo   [3097 bytes]
+ELF 32-bit LSB executable, ARM, EABI5 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, no section header
+      Class:                             ELF32
+      Type:                              EXEC (Executable file)
+      Machine:                           ARM
+      Entry point address:               0x864c
+  -- NEEDED --
+     0x00000001 (NEEDED)                     Shared library: [libpthread.so.0]
+     0x00000001 (NEEDED)                     Shared library: [librt.so.0]
+     0x00000001 (NEEDED)                     Shared library: [libdl.so.0]
+     0x00000001 (NEEDED)                     Shared library: [libwifimg.so]
+     0x00000001 (NEEDED)                     Shared library: [libsmartlinkd_client.so]
+     0x00000001 (NEEDED)                     Shared library: [libgowild_led.so]
+     0x00000001 (NEEDED)                     Shared library: [libgowild-hw-common.so]
+     0x00000001 (NEEDED)                     Shared library: [libgcc_s.so.1]
+     0x00000001 (NEEDED)                     Shared library: [libc.so.0]
+
+### test_led   [1854 bytes]
+ELF 32-bit LSB executable, ARM, EABI5 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, no section header
+      Class:                             ELF32
+      Type:                              EXEC (Executable file)
+      Machine:                           ARM
+      Entry point address:               0x8534
+  -- NEEDED --
+     0x00000001 (NEEDED)                     Shared library: [libpthread.so.0]
+     0x00000001 (NEEDED)                     Shared library: [librt.so.0]
+     0x00000001 (NEEDED)                     Shared library: [libdl.so.0]
+     0x00000001 (NEEDED)                     Shared library: [libwifimg.so]
+     0x00000001 (NEEDED)                     Shared library: [libsmartlinkd_client.so]
+     0x00000001 (NEEDED)                     Shared library: [libgowild_led.so]
+     0x00000001 (NEEDED)                     Shared library: [libgowild-hw-common.so]
+     0x00000001 (NEEDED)                     Shared library: [libgcc_s.so.1]
+     0x00000001 (NEEDED)                     Shared library: [libc.so.0]
+
+### wifi_demo   [4374 bytes]
+ELF 32-bit LSB executable, ARM, EABI5 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, no section header
+      Class:                             ELF32
+      Type:                              EXEC (Executable file)
+      Machine:                           ARM
+      Entry point address:               0x8964
+  -- NEEDED --
+     0x00000001 (NEEDED)                     Shared library: [libwifimg.so]
+     0x00000001 (NEEDED)                     Shared library: [libpthread.so.0]
+     0x00000001 (NEEDED)                     Shared library: [libgcc_s.so.1]
+     0x00000001 (NEEDED)                     Shared library: [libc.so.0]
+
+### wifi_test   [5294 bytes]
+ELF 32-bit LSB executable, ARM, EABI5 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, no section header
+      Class:                             ELF32
+      Type:                              EXEC (Executable file)
+      Machine:                           ARM
+      Entry point address:               0x89e0
+  -- NEEDED --
+     0x00000001 (NEEDED)                     Shared library: [libpthread.so.0]
+     0x00000001 (NEEDED)                     Shared library: [libgowild_wifi.so]
+     0x00000001 (NEEDED)                     Shared library: [libgowild_smartlink.so]
+     0x00000001 (NEEDED)                     Shared library: [libgowild_network_manager.so]
+     0x00000001 (NEEDED)                     Shared library: [libgowild_keyevent.so]
+     0x00000001 (NEEDED)                     Shared library: [libwifimg.so]
+     0x00000001 (NEEDED)                     Shared library: [libgowild-hw-common.so]
+     0x00000001 (NEEDED)                     Shared library: [libgowild_led.so]
+     0x00000001 (NEEDED)                     Shared library: [libgowild-hw-ipc.so]
+     0x00000001 (NEEDED)                     Shared library: [libbt_server.so]
+     0x00000001 (NEEDED)                     Shared library: [libbt_interface.so]
+     0x00000001 (NEEDED)                     Shared library: [libgowild_battery_server.so]
+     0x00000001 (NEEDED)                     Shared library: [libgw_os_update.so]
+     0x00000001 (NEEDED)                     Shared library: [libgw_download_server.so]
+     0x00000001 (NEEDED)                     Shared library: [libgw_md5.so]
+     0x00000001 (NEEDED)                     Shared library: [libgcc_s.so.1]
+     0x00000001 (NEEDED)                     Shared library: [libc.so.0]
+
+### libcae.so   [949582 bytes]
+ELF 32-bit LSB shared object, ARM, EABI5 version 1 (SYSV), dynamically linked, no section header
+      Class:                             ELF32
+      Type:                              DYN (Shared object file)
+      Machine:                           ARM
+      Entry point address:               0x71b8
+  -- NEEDED --
+     0x00000001 (NEEDED)                     Shared library: [libpthread.so.0]
+     0x00000001 (NEEDED)                     Shared library: [libstdc++.so.6]
+     0x00000001 (NEEDED)                     Shared library: [libm.so.0]
+     0x00000001 (NEEDED)                     Shared library: [libgcc_s.so.1]
+     0x00000001 (NEEDED)                     Shared library: [libc.so.0]
+
+### libmsc.so   [914451 bytes]
+ELF 32-bit LSB shared object, ARM, EABI5 version 1 (SYSV), dynamically linked, no section header
+      Class:                             ELF32
+      Type:                              DYN (Shared object file)
+      Machine:                           ARM
+      Entry point address:               0x54b0
+  -- NEEDED --
+     0x00000001 (NEEDED)                     Shared library: [libm.so.0]
+     0x00000001 (NEEDED)                     Shared library: [libgcc_s.so.1]
+     0x00000001 (NEEDED)                     Shared library: [libc.so.0]
+
+### libqr.so.1   [87539 bytes]
+ELF 32-bit LSB shared object, ARM, EABI5 version 1 (SYSV), dynamically linked, no section header
+      Class:                             ELF32
+      Type:                              DYN (Shared object file)
+      Machine:                           ARM
+      Entry point address:               0x15f0
+  -- NEEDED --
+     0x00000001 (NEEDED)                     Shared library: [libm.so.0]
+     0x00000001 (NEEDED)                     Shared library: [libz.so.1]
+     0x00000001 (NEEDED)                     Shared library: [libgcc_s.so.1]
+     0x00000001 (NEEDED)                     Shared library: [libc.so.0]
+     0x0000000e (SONAME)                     Library soname: [libqr.so.1]
+     0x0000000f (RPATH)                      Library rpath: [::::::::]
+
+### libbt_interface.so   [4614 bytes]
+ELF 32-bit LSB shared object, ARM, EABI5 version 1 (SYSV), dynamically linked, no section header
+      Class:                             ELF32
+      Type:                              DYN (Shared object file)
+      Machine:                           ARM
+      Entry point address:               0xc80
+  -- NEEDED --
+     0x00000001 (NEEDED)                     Shared library: [libgowild-hw-common.so]
+     0x00000001 (NEEDED)                     Shared library: [libbsa.so]
+     0x00000001 (NEEDED)                     Shared library: [libbtapp.so]
+     0x00000001 (NEEDED)                     Shared library: [libstdc++.so.6]
+     0x00000001 (NEEDED)                     Shared library: [libm.so.0]
+     0x00000001 (NEEDED)                     Shared library: [libgcc_s.so.1]
+     0x00000001 (NEEDED)                     Shared library: [libc.so.0]
+
+### libbt_server.so   [5724 bytes]
+ELF 32-bit LSB shared object, ARM, EABI5 version 1 (SYSV), dynamically linked, no section header
+      Class:                             ELF32
+      Type:                              DYN (Shared object file)
+      Machine:                           ARM
+      Entry point address:               0x9f4
+  -- NEEDED --
+     0x00000001 (NEEDED)                     Shared library: [libgowild-hw-common.so]
+     0x00000001 (NEEDED)                     Shared library: [libbsa.so]
+     0x00000001 (NEEDED)                     Shared library: [libbtapp.so]
+     0x00000001 (NEEDED)                     Shared library: [libpthread.so.0]
+
+### libgowild-hw-common.so   [13138 bytes]
+ELF 32-bit LSB shared object, ARM, EABI5 version 1 (SYSV), dynamically linked, no section header
+      Class:                             ELF32
+      Type:                              DYN (Shared object file)
+      Machine:                           ARM
+      Entry point address:               0x14d8
+  -- NEEDED --
+     0x00000001 (NEEDED)                     Shared library: [libpthread.so.0]
+
+### libgowild-hw-ipc.so   [3822 bytes]
+ELF 32-bit LSB shared object, ARM, EABI5 version 1 (SYSV), dynamically linked, no section header
+      Class:                             ELF32
+      Type:                              DYN (Shared object file)
+      Machine:                           ARM
+      Entry point address:               0x710
+  -- NEEDED --
+     0x00000001 (NEEDED)                     Shared library: [libgowild-hw-common.so]
+     0x00000001 (NEEDED)                     Shared library: [libpthread.so.0]
+
+### libgowild_battery_server.so   [3178 bytes]
+ELF 32-bit LSB shared object, ARM, EABI5 version 1 (SYSV), dynamically linked, no section header
+      Class:                             ELF32
+      Type:                              DYN (Shared object file)
+      Machine:                           ARM
+      Entry point address:               0x5e8
+  -- NEEDED --
+     0x00000001 (NEEDED)                     Shared library: [libgowild-hw-common.so]
+     0x00000001 (NEEDED)                     Shared library: [libpthread.so.0]
+
+### libgowild_keyevent.so   [7026 bytes]
+ELF 32-bit LSB shared object, ARM, EABI5 version 1 (SYSV), dynamically linked, no section header
+      Class:                             ELF32
+      Type:                              DYN (Shared object file)
+      Machine:                           ARM
+      Entry point address:               0xaa8
+  -- NEEDED --
+     0x00000001 (NEEDED)                     Shared library: [libpthread.so.0]
+     0x00000001 (NEEDED)                     Shared library: [libmad.so.0]
+     0x00000001 (NEEDED)                     Shared library: [libasound.so.2]
+
+### libgowild_led.so   [2346 bytes]
+ELF 32-bit LSB shared object, ARM, EABI5 version 1 (SYSV), dynamically linked, no section header
+      Class:                             ELF32
+      Type:                              DYN (Shared object file)
+      Machine:                           ARM
+      Entry point address:               0x470
+  -- NEEDED --
+     0x00000001 (NEEDED)                     Shared library: [libgowild-hw-common.so]
+     0x00000001 (NEEDED)                     Shared library: [libpthread.so.0]
+
+### libgowild_network_manager.so   [11589 bytes]
+ELF 32-bit LSB shared object, ARM, EABI5 version 1 (SYSV), dynamically linked, no section header
+      Class:                             ELF32
+      Type:                              DYN (Shared object file)
+      Machine:                           ARM
+      Entry point address:               0x10e0
+  -- NEEDED --
+     0x00000001 (NEEDED)                     Shared library: [libpthread.so.0]
+     0x00000001 (NEEDED)                     Shared library: [libwifimg.so]
+     0x00000001 (NEEDED)                     Shared library: [libgowild-hw-common.so]
+     0x00000001 (NEEDED)                     Shared library: [libgowild_wifi.so]
+     0x00000001 (NEEDED)                     Shared library: [libgowild_smartlink.so]
+     0x00000001 (NEEDED)                     Shared library: [libgcc_s.so.1]
+     0x00000001 (NEEDED)                     Shared library: [libc.so.0]
+
+### libgowild_smartlink.so   [3094 bytes]
+ELF 32-bit LSB shared object, ARM, EABI5 version 1 (SYSV), dynamically linked, no section header
+      Class:                             ELF32
+      Type:                              DYN (Shared object file)
+      Machine:                           ARM
+      Entry point address:               0x4a8
+  -- NEEDED --
+     0x00000001 (NEEDED)                     Shared library: [libpthread.so.0]
+     0x00000001 (NEEDED)                     Shared library: [libsmartlinkd_client.so]
+
+### libgowild_wifi.so   [11334 bytes]
+ELF 32-bit LSB shared object, ARM, EABI5 version 1 (SYSV), dynamically linked, no section header
+      Class:                             ELF32
+      Type:                              DYN (Shared object file)
+      Machine:                           ARM
+      Entry point address:               0x958
+  -- NEEDED --
+     0x00000001 (NEEDED)                     Shared library: [libpthread.so.0]
+     0x00000001 (NEEDED)                     Shared library: [libwifimg.so]
+     0x00000001 (NEEDED)                     Shared library: [libgowild-hw-common.so]
+     0x00000001 (NEEDED)                     Shared library: [libgcc_s.so.1]
+     0x00000001 (NEEDED)                     Shared library: [libc.so.0]
+
+### libgw_download_server.so   [8770 bytes]
+ELF 32-bit LSB shared object, ARM, EABI5 version 1 (SYSV), dynamically linked, no section header
+      Class:                             ELF32
+      Type:                              DYN (Shared object file)
+      Machine:                           ARM
+      Entry point address:               0xdb4
+  -- NEEDED --
+     0x00000001 (NEEDED)                     Shared library: [libc.so.0]
+     0x00000001 (NEEDED)                     Shared library: [libpolarssl.so.7]
+     0x00000001 (NEEDED)                     Shared library: [libjson-c.so.2]
+     0x00000001 (NEEDED)                     Shared library: [libcurl.so.4]
+     0x00000001 (NEEDED)                     Shared library: [libgowild-hw-common.so]
+     0x00000001 (NEEDED)                     Shared library: [libgw_md5.so]
+     0x00000001 (NEEDED)                     Shared library: [libpthread.so.0]
+
+### libgw_md5.so   [6354 bytes]
+ELF 32-bit LSB shared object, ARM, EABI5 version 1 (SYSV), dynamically linked, no section header
+      Class:                             ELF32
+      Type:                              DYN (Shared object file)
+      Machine:                           ARM
+      Entry point address:               0x57c
+  -- NEEDED --
+
+### libgw_os_update.so   [6890 bytes]
+ELF 32-bit LSB shared object, ARM, EABI5 version 1 (SYSV), dynamically linked, no section header
+      Class:                             ELF32
+      Type:                              DYN (Shared object file)
+      Machine:                           ARM
+      Entry point address:               0xae0
+  -- NEEDED --
+     0x00000001 (NEEDED)                     Shared library: [libc.so.0]
+     0x00000001 (NEEDED)                     Shared library: [libpolarssl.so.7]
+     0x00000001 (NEEDED)                     Shared library: [libjson-c.so.2]
+     0x00000001 (NEEDED)                     Shared library: [libcurl.so.4]
+     0x00000001 (NEEDED)                     Shared library: [libgowild-hw-common.so]
+     0x00000001 (NEEDED)                     Shared library: [libgw_download_server.so]
+     0x00000001 (NEEDED)                     Shared library: [libgw_md5.so]
+     0x00000001 (NEEDED)                     Shared library: [libpthread.so.0]
+
+### zhc_hardware_test   [42534 bytes]
+ELF 32-bit LSB executable, ARM, EABI5 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, no section header
+      Class:                             ELF32
+      Type:                              EXEC (Executable file)
+      Machine:                           ARM
+      Entry point address:               0x99b4
+  -- NEEDED --
+     0x00000001 (NEEDED)                     Shared library: [libpthread.so.0]
+     0x00000001 (NEEDED)                     Shared library: [libwifimg.so]
+     0x00000001 (NEEDED)                     Shared library: [libzhc_audio.so]
+     0x00000001 (NEEDED)                     Shared library: [libasound.so.2]
+     0x00000001 (NEEDED)                     Shared library: [libmictest.so]
+     0x00000001 (NEEDED)                     Shared library: [libm.so.0]
+     0x00000001 (NEEDED)                     Shared library: [librt.so.0]
+     0x00000001 (NEEDED)                     Shared library: [libid3tag.so.0]
+     0x00000001 (NEEDED)                     Shared library: [libmad.so.0]
+     0x00000001 (NEEDED)                     Shared library: [libgcc_s.so.1]
+     0x00000001 (NEEDED)                     Shared library: [libc.so.0]
+
+### zhc_bluetooth_service   [5316 bytes]
+ELF 32-bit LSB executable, ARM, EABI5 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, no section header
+      Class:                             ELF32
+      Type:                              EXEC (Executable file)
+      Machine:                           ARM
+      Entry point address:               0x88fc
+  -- NEEDED --
+     0x00000001 (NEEDED)                     Shared library: [libbtapp.so]
+     0x00000001 (NEEDED)                     Shared library: [libbsa.so]
+     0x00000001 (NEEDED)                     Shared library: [libpthread.so.0]
+     0x00000001 (NEEDED)                     Shared library: [libstdc++.so.6]
+     0x00000001 (NEEDED)                     Shared library: [libm.so.0]
+     0x00000001 (NEEDED)                     Shared library: [libgcc_s.so.1]
+     0x00000001 (NEEDED)                     Shared library: [libc.so.0]
+
+### smartlinkd   [14386 bytes]
+ELF 32-bit LSB executable, ARM, EABI5 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, no section header
+      Class:                             ELF32
+      Type:                              EXEC (Executable file)
+      Machine:                           ARM
+      Entry point address:               0x9140
+  -- NEEDED --
+     0x00000001 (NEEDED)                     Shared library: [libpthread.so.0]
+     0x00000001 (NEEDED)                     Shared library: [libawbase.so]
+     0x00000001 (NEEDED)                     Shared library: [libstdc++.so.6]
+     0x00000001 (NEEDED)                     Shared library: [libm.so.0]
+     0x00000001 (NEEDED)                     Shared library: [libgcc_s.so.1]
+     0x00000001 (NEEDED)                     Shared library: [libc.so.0]
+
+### adbd   [99513 bytes]
+ELF 32-bit LSB executable, ARM, EABI5 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, no section header
+      Class:                             ELF32
+      Type:                              EXEC (Executable file)
+      Machine:                           ARM
+      Entry point address:               0x9d64
+  -- NEEDED --
+     0x00000001 (NEEDED)                     Shared library: [libpthread.so.0]
+     0x00000001 (NEEDED)                     Shared library: [libawbase.so]
+     0x00000001 (NEEDED)                     Shared library: [libgcc_s.so.1]
+     0x00000001 (NEEDED)                     Shared library: [libc.so.0]
+
+### procd   [44279 bytes]
+ELF 32-bit LSB executable, ARM, EABI5 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, no section header
+      Class:                             ELF32
+      Type:                              EXEC (Executable file)
+      Machine:                           ARM
+      Entry point address:               0xa5b0
+  -- NEEDED --
+     0x00000001 (NEEDED)                     Shared library: [libubox.so]
+     0x00000001 (NEEDED)                     Shared library: [libubus.so]
+     0x00000001 (NEEDED)                     Shared library: [libjson-c.so.2]
+     0x00000001 (NEEDED)                     Shared library: [libblobmsg_json.so]
+     0x00000001 (NEEDED)                     Shared library: [libjson_script.so]
+     0x00000001 (NEEDED)                     Shared library: [libgcc_s.so.1]
+     0x00000001 (NEEDED)                     Shared library: [libc.so.0]
+
+### busybox   [358505 bytes]
+ELF 32-bit LSB executable, ARM, EABI5 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, no section header
+      Class:                             ELF32
+      Type:                              EXEC (Executable file)
+      Machine:                           ARM
+      Entry point address:               0xf480
+  -- NEEDED --
+     0x00000001 (NEEDED)                     Shared library: [libcrypt.so.0]
+     0x00000001 (NEEDED)                     Shared library: [libm.so.0]
+     0x00000001 (NEEDED)                     Shared library: [libgcc_s.so.1]
+     0x00000001 (NEEDED)                     Shared library: [libc.so.0]
+
+### wpa_supplicant   [465091 bytes]
+ELF 32-bit LSB executable, ARM, EABI5 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, no section header
+      Class:                             ELF32
+      Type:                              EXEC (Executable file)
+      Machine:                           ARM
+      Entry point address:               0xa2c0
+  -- NEEDED --
+     0x00000001 (NEEDED)                     Shared library: [libm.so.0]
+     0x00000001 (NEEDED)                     Shared library: [libnl-tiny.so]
+     0x00000001 (NEEDED)                     Shared library: [libgcc_s.so.1]
+     0x00000001 (NEEDED)                     Shared library: [libc.so.0]
+
+### zhc_function.ko   [3332 bytes]
+ELF 32-bit LSB relocatable, ARM, EABI5 version 1 (SYSV), not stripped
+      Class:                             ELF32
+      Type:                              REL (Relocatable file)
+      Machine:                           ARM
+      Entry point address:               0x0
+  -- NEEDED --
+
+### zhc_gpio.ko   [4112 bytes]
+ELF 32-bit LSB relocatable, ARM, EABI5 version 1 (SYSV), not stripped
+      Class:                             ELF32
+      Type:                              REL (Relocatable file)
+      Machine:                           ARM
+      Entry point address:               0x0
+  -- NEEDED --
+
+### zhc_led.ko   [3768 bytes]
+ELF 32-bit LSB relocatable, ARM, EABI5 version 1 (SYSV), not stripped
+      Class:                             ELF32
+      Type:                              REL (Relocatable file)
+      Machine:                           ARM
+      Entry point address:               0x0
+  -- NEEDED --
+
+### zhc_power.ko   [8776 bytes]
+ELF 32-bit LSB relocatable, ARM, EABI5 version 1 (SYSV), not stripped
+      Class:                             ELF32
+      Type:                              REL (Relocatable file)
+      Machine:                           ARM
+      Entry point address:               0x0
+  -- NEEDED --
+
+### zhc_fpga_spi.ko   [11108 bytes]
+ELF 32-bit LSB relocatable, ARM, EABI5 version 1 (SYSV), not stripped
+      Class:                             ELF32
+      Type:                              REL (Relocatable file)
+      Machine:                           ARM
+      Entry point address:               0x0
+  -- NEEDED --
+
+### zhc_fpga_iCE40.ko   [9580 bytes]
+ELF 32-bit LSB relocatable, ARM, EABI5 version 1 (SYSV), not stripped
+      Class:                             ELF32
+      Type:                              REL (Relocatable file)
+      Machine:                           ARM
+      Entry point address:               0x0
+  -- NEEDED --
+
+### zhc_i2c_detect.ko   [4396 bytes]
+ELF 32-bit LSB relocatable, ARM, EABI5 version 1 (SYSV), not stripped
+      Class:                             ELF32
+      Type:                              REL (Relocatable file)
+      Machine:                           ARM
+      Entry point address:               0x0
+  -- NEEDED --
+
+### zhc_adc_sun5i.ko   [5040 bytes]
+ELF 32-bit LSB relocatable, ARM, EABI5 version 1 (SYSV), not stripped
+      Class:                             ELF32
+      Type:                              REL (Relocatable file)
+      Machine:                           ARM
+      Entry point address:               0x0
+  -- NEEDED --
+
+### zhc_adc_nau8540.ko   [8272 bytes]
+ELF 32-bit LSB relocatable, ARM, EABI5 version 1 (SYSV), not stripped
+      Class:                             ELF32
+      Type:                              REL (Relocatable file)
+      Machine:                           ARM
+      Entry point address:               0x0
+  -- NEEDED --
+
+### zhc_drivers_script.ko   [5728 bytes]
+ELF 32-bit LSB relocatable, ARM, EABI5 version 1 (SYSV), not stripped
+      Class:                             ELF32
+      Type:                              REL (Relocatable file)
+      Machine:                           ARM
+      Entry point address:               0x0
+  -- NEEDED --
+
+### zhc_version.ko   [4364 bytes]
+ELF 32-bit LSB relocatable, ARM, EABI5 version 1 (SYSV), not stripped
+      Class:                             ELF32
+      Type:                              REL (Relocatable file)
+      Machine:                           ARM
+      Entry point address:               0x0
+  -- NEEDED --
+

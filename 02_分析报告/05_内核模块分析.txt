@@ -1,0 +1,502 @@
+############ ZHC KERNEL MODULE ANALYSIS ############
+
+=== zhc_function.ko (3332 bytes) ===
+-- modinfo --
+   filename:       /mnt/c/Users/Administrator/Desktop/aku1/04_rootfs/rootfs/lib/modules/3.4.39/zhc_function.ko
+   license:        GPL
+   author:         lovemengx <zhangfuliang@teamco-operation.com>
+   description:    ASoC FPGA zhc_function driver
+   depends:        
+   vermagic:       3.4.39 preempt mod_unload ARMv7 p2v8 
+-- symbols --
+_0 _1 _2 _3 
+-- strings --
+   /home/zhangfuliang/work/svn/tina_baymini/build_dir/target-arm_cortex-a8+neon_uClibc-0.9.33.2_eabi/linux-sun5i/zhc_function/zhc_function.c
+   [%s]Fun: %s  Line: %05d  <--
+   aeabi
+   author=lovemengx <zhangfuliang@teamco-operation.com>
+   depends=
+   description=ASoC FPGA zhc_function driver
+   license=GPL
+   printk
+   strlen
+   zhc_function
+   zhc_function_exit
+   zhc_function_init
+   zhc_split_parameter
+
+=== zhc_version.ko (4364 bytes) ===
+-- modinfo --
+   filename:       /mnt/c/Users/Administrator/Desktop/aku1/04_rootfs/rootfs/lib/modules/3.4.39/zhc_version.ko
+   license:        GPL
+   author:         lovemengx <zhangfuliang@teamco-operation.com>
+   description:    ASoC FPGA zhc_version driver
+   depends:        
+   vermagic:       3.4.39 preempt mod_unload ARMv7 p2v8 
+-- symbols --
+_0 _1 _2 _3 _4 _5 _6 _7 _8 
+-- strings --
+   ----------------------------------------------------
+   /home/zhangfuliang/work/svn/tina_baymini/build_dir/target-arm_cortex-a8+neon_uClibc-0.9.33.2_eabi/linux-sun5i/zhc_version/zhc_version.c
+   1.1.9
+   [%s]Fun: %s  Line: %05d  <--
+   aeabi
+   author=lovemengx <zhangfuliang@teamco-operation.com>
+   class_unregister
+   depends=
+   description=ASoC FPGA zhc_version driver
+   gowild
+   license=GPL
+   printk
+   sprintf
+   zhc_os
+   zhc_os_clients
+   zhc_os_clients : %s
+   zhc_os_clients:%s
+   zhc_os_model
+   zhc_os_model   : %s
+   zhc_os_model:%s
+   zhc_os_version
+   zhc_os_version : %s
+   zhc_os_version:%s
+   zhc_version
+   zhc_version_exit
+   zhc_version_init
+
+=== zhc_gpio.ko (4112 bytes) ===
+-- modinfo --
+   filename:       /mnt/c/Users/Administrator/Desktop/aku1/04_rootfs/rootfs/lib/modules/3.4.39/zhc_gpio.ko
+   license:        GPL
+   author:         lovemengx <zhangfuliang@teamco-operation.com>
+   description:    ASoC FPGA zhc_gpio driver
+   depends:        
+   vermagic:       3.4.39 preempt mod_unload ARMv7 p2v8 
+-- symbols --
+_0 _1 _2 _3 
+-- strings --
+   /home/zhangfuliang/work/svn/tina_baymini/build_dir/target-arm_cortex-a8+neon_uClibc-0.9.33.2_eabi/linux-sun5i/zhc_gpio/zhc_gpio.c
+   <3>[ERROR!!!] [%s]Fun: %s  Line: %05d gpio_request [gpio_para] fail! <--
+   [%s]Fun: %s  Line: %05d  <--
+   [%s]Fun: %s  Line: %05d eZHCGPIO_GET_PCBA_TEST args:%d <--
+   aeabi
+   author=lovemengx <zhangfuliang@teamco-operation.com>
+   depends=
+   description=ASoC FPGA zhc_gpio driver
+   gpio_get_one_pin_status
+   gpio_para
+   gpio_pcba_test
+   gpio_read_one_pin_value
+   gpio_release
+   gpio_request_ex
+   gpio_set_one_pin_status
+   license=GPL
+   misc_deregister
+   misc_register
+   printk
+   zhc_gpio
+   zhc_gpio_exit
+   zhc_gpio_init
+   zhc_gpio_ioctl
+
+=== zhc_led.ko (3768 bytes) ===
+-- modinfo --
+   filename:       /mnt/c/Users/Administrator/Desktop/aku1/04_rootfs/rootfs/lib/modules/3.4.39/zhc_led.ko
+   license:        GPL
+   author:         lovemengx <zhangfuliang@teamco-operation.com>
+   description:    ASoC FPGA zhc_led driver
+   depends:        
+   vermagic:       3.4.39 preempt mod_unload ARMv7 p2v8 
+-- symbols --
+_0 _1 _2 _3 
+-- strings --
+   /home/zhangfuliang/work/svn/tina_baymini/build_dir/target-arm_cortex-a8+neon_uClibc-0.9.33.2_eabi/linux-sun5i/zhc_led/zhc_led.c
+   <3>[ERROR!!!] [%s]Fun: %s  Line: %05d gpio_request [led_para] fail! <--
+   aeabi
+   author=lovemengx <zhangfuliang@teamco-operation.com>
+   depends=
+   description=ASoC FPGA zhc_led driver
+   gpio_release
+   gpio_request_ex
+   gpio_write_one_pin_value
+   led_blue
+   led_green
+   led_para
+   led_red
+   license=GPL
+   misc_deregister
+   misc_register
+   printk
+   zhc_led
+   zhc_led_init
+   zhc_power_ctrl
+
+=== zhc_power.ko (8776 bytes) ===
+-- modinfo --
+   filename:       /mnt/c/Users/Administrator/Desktop/aku1/04_rootfs/rootfs/lib/modules/3.4.39/zhc_power.ko
+   license:        GPL
+   author:         lovemengx <zhangfuliang@teamco-operation.com>
+   description:    ASoC FPGA zhc_power driver
+   depends:        
+   vermagic:       3.4.39 preempt mod_unload ARMv7 p2v8 
+-- symbols --
+_0 _1 _10 _11 _2 _3 _4 _5 _6 _7 _8 _9 
+-- strings --
+    			
+    1.power_adc 
+    2.power_dcin 
+    3.power_fpga 
+    4.axp20_fpga 
+    5.axp20_led 
+    5.power_lcd 
+    <--
+    example: 
+    power_adc off: echo power_adc 0 > power_ctl
+    power_adc on : echo power_adc 1 > power_ctl 
+   /home/zhangfuliang/work/svn/tina_baymini/build_dir/target-arm_cortex-a8+neon_uClibc-0.9.33.2_eabi/linux-sun5i/zhc_power/zhc_power.c
+   <3>[ERROR!!!] [%s]Fun: %s  Line: %05d NOT CMD... <--
+   <3>[ERROR!!!] [%s]Fun: %s  Line: %05d fetch power_led from sys_config failed
+   <3>[ERROR!!!] [%s]Fun: %s  Line: %05d gpio_request [zhc_power] fail! <--
+   <3>[ERROR!!!] [%s]Fun: %s  Line: %05d input arg != 2... <--
+   [%s]Fun: %s  Line: %05d  <--
+   [%s]Fun: %s  Line: %05d REG(0x12) = 0x%.2x <--
+   [%s]Fun: %s  Line: %05d REG(0x34) = 0x%.2x <--
+   [%s]Fun: %s  Line: %05d REG(0x90) = 0x%.2x <--
+   [%s]Fun: %s  Line: %05d REG(0x91) = 0x%.2x <--
+   [%s]Fun: %s  Line: %05d REG(0x93) = 0x%.2x <--
+   [%s]Fun: %s  Line: %05d enDRIVERS_CMD = %d enDRIVERS_CTL = %d <--
+   [%s]Fun: %s  Line: %05d key = %s on = %d <--
+   _kstrtoul
+   aeabi
+   argv[0] = %s  to value=[0x%x]
+   author=lovemengx <zhangfuliang@teamco-operation.com>
+   axp20_
+   axp20_fpga
+   axp20_ldo4
+   axp20_ldo5
+   axp20_led
+   axp_reg
+   class_unregister
+   cmd:
+   depends=
+   description=ASoC FPGA zhc_power driver
+   gpio_release
+   gpio_request_ex
+   gpio_write_one_pin_value
+   license=GPL
+   memset
+   platform_device_register
+   platform_driver_register
+   power_adc
+   power_amp
+   power_ctl
+   power_dcin
+   power_fpga
+   power_lcd
+   printk
+   reg[%d]=%x
+   script_parser_fetch
+   simple_strtoull
+   sprintf
+   strcpy
+   strstr
+   zhc_axp_read
+   zhc_axp_write
+
+=== zhc_fpga_spi.ko (11108 bytes) ===
+-- modinfo --
+   filename:       /mnt/c/Users/Administrator/Desktop/aku1/04_rootfs/rootfs/lib/modules/3.4.39/zhc_fpga_spi.ko
+   alias:          spi:spidev
+   license:        GPL
+   description:    User mode SPI device interface
+   author:         Andrea Paterniani, <a.paterniani@swapp-eng.it>
+   depends:        
+   vermagic:       3.4.39 preempt mod_unload ARMv7 p2v8 
+   parm:           bufsiz:data bytes in biggest supported SPI message (uint)
+-- symbols --
+_0 _1 _10 _11 _12 _13 _14 _2 _3 _4 _5 _6 _7 _8 _9 
+-- strings --
+   &spidev->buf_lock
+   /home/zhangfuliang/work/svn/tina_baymini/build_dir/target-arm_cortex-a8+neon_uClibc-0.9.33.2_eabi/linux-sun5i/zhc_fpga_spi/zhc_fpga_spi.c
+   <3>[ERROR!!!] [%s]Fun: %s  Line: %05d this_spi is NULL!!! <--
+   _clear_bit
+   _find_first_zero_bit_le
+   _set_bit
+   aeabi
+   alias=spi:spidev
+   author=Andrea Paterniani, <a.paterniani@swapp-eng.it>
+   bufsiz
+   class_destroy
+   complete
+   depends=
+   description=User mode SPI device interface
+   dev_get_drvdata
+   dev_set_drvdata
+   device_create
+   device_destroy
+   driver_unregister
+   get_device
+   kfree
+   kmem_cache_alloc
+   license=GPL
+   malloc_sizes
+   memset
+   mutex_lock
+   mutex_unlock
+   no_llseek
+   nonseekable_open
+   param_ops_uint
+   parm=bufsiz:data bytes in biggest supported SPI message
+   parmtype=bufsiz:uint
+   preempt_schedule
+   printk
+   put_device
+   spi_async
+   spi_register_driver
+   spi_setup
+   spidev
+   spidev%d.%d
+   wait_for_completion
+   zhc_fpga_spi
+   zhc_spi_hook_dma_install
+   zhc_spi_hook_dma_uninstall
+   zhc_spi_read
+   zhc_spi_start_dma
+   zhc_spidev_hook_dma_install
+   zhc_spidev_hook_dma_uninstall
+   zhc_spidev_read
+   zhc_spidev_start_dma
+
+=== zhc_fpga_iCE40.ko (9580 bytes) ===
+-- modinfo --
+   filename:       /mnt/c/Users/Administrator/Desktop/aku1/04_rootfs/rootfs/lib/modules/3.4.39/zhc_fpga_iCE40.ko
+   license:        GPL
+   author:         lovemengx <zhangfuliang@teamco-operation.com>
+   description:    ASoC FPGA iCE40 driver
+   depends:        
+   vermagic:       3.4.39 preempt mod_unload ARMv7 p2v8 
+-- symbols --
+_0 _1 _10 _11 _12 _13 _14 _15 _16 _17 _18 _19 _2 _3 _4 _5 _6 _7 _8 _9 
+-- strings --
+   &g_wait_queue
+   ---[%s]----------------------------------
+   /home/zhangfuliang/work/svn/tina_baymini/build_dir/target-arm_cortex-a8+neon_uClibc-0.9.33.2_eabi/linux-sun5i/zhc_fpga_iCE40/zhc_fpga_iCE40.c
+   <3>[ERROR!!!] [%s]Fun: %s  Line: %05d CMD_TYPE != eADC_MAGIC_iCE40 <--
+   <3>[ERROR!!!] [%s]Fun: %s  Line: %05d _IOC_NR >= eiCE40_CMD_MAX(%d) <--
+   <3>[ERROR!!!] [%s]Fun: %s  Line: %05d cp_user_len(%d) != sizeof(struct stmmap_info)(%d) <--
+   <3>[ERROR!!!] [%s]Fun: %s  Line: %05d gpio_request [fpga_para] fail! <--
+   IRQ_EINT16
+   SPI_BC_REG       = 0x%.8x
+   SPI_CLK_RATE_REG = 0x%.8x
+   SPI_CTL_REG      = 0x%.8x
+   SPI_DMA_CTL_REG  = 0x%.8x
+   SPI_FIFO_STA_REG = 0x%.8x
+   SPI_INT_CTL_REG  = 0x%.8x
+   SPI_STATUS_REG   = 0x%.8x
+   SPI_TC_REG       = 0x%.8x
+   SPI_WAIT_REG     = 0x%.8x
+   aeabi
+   author=lovemengx <zhangfuliang@teamco-operation.com>
+   autoremove_wake_function
+   depends=
+   description=ASoC FPGA iCE40 driver
+   down_trylock
+   finish_wait
+   fpga_cdone_data_IRQ
+   fpga_crest_b
+   fpga_para
+   fpga_soft_reset
+   fpga_spi_cs0
+   fpga_spi_cs1
+   free_irq
+   gpio_get_one_pin_status
+   gpio_read_one_pin_value
+   gpio_release
+   gpio_request_ex
+   gpio_set_one_pin_status
+   gpio_write_one_pin_value
+   iCE40_ioctl
+   iCE40_read
+   kfree
+   license=GPL
+   mem_map
+   memset
+   misc_deregister
+   misc_register
+   pgprot_user
+   prepare_to_wait
+   printk
+   remap_pfn_range
+   request_threaded_irq
+   schedule
+   zhc_fpga_iCE40
+   zhc_fpga_iCE40_init
+   zhc_power_ctrl
+   zhc_spidev_read
+
+=== zhc_i2c_detect.ko (4396 bytes) ===
+-- modinfo --
+   filename:       /mnt/c/Users/Administrator/Desktop/aku1/04_rootfs/rootfs/lib/modules/3.4.39/zhc_i2c_detect.ko
+   license:        GPL
+   description:    This I2C Devices Detect Driver Use Debug I2C devices
+   author:         lovemengx
+   depends:        
+   vermagic:       3.4.39 preempt mod_unload ARMv7 p2v8 
+-- symbols --
+_0 _1 _2 _3 _4 _5 
+-- strings --
+   --------------------------------------
+   /home/zhangfuliang/work/svn/tina_baymini/build_dir/target-arm_cortex-a8+neon_uClibc-0.9.33.2_eabi/linux-sun5i/zhc_i2c_detect/zhc_i2c_detect.c
+   <3>[ERROR!!!] [%s]Fun: %s  Line: %05d i2c_add_driver() failed <--
+   <3>[info] [%s]Fun: %s  Line: %05d  <--
+   <3>[info] [%s]Fun: %s  Line: %05d data = 0x%x <--
+   I2c_Detect_Reload
+   I2c_Detect_store
+   [%s]Fun: %s  Line: %05d  <--
+   _kstrtoul
+   adapter->nr = %d I2C_device = 0x%x
+   aeabi
+   author=lovemengx
+   class_unregister
+   depends=
+   description=This I2C Devices Detect Driver Use Debug I2C devices
+   i2c_addr
+   i2c_del_driver
+   i2c_detect_exit
+   i2c_detect_init
+   i2c_register_driver
+   license=GPL
+   printk
+   zhc_i2c_detect
+
+=== zhc_adc_sun5i.ko (5040 bytes) ===
+-- modinfo --
+   filename:       /mnt/c/Users/Administrator/Desktop/aku1/04_rootfs/rootfs/lib/modules/3.4.39/zhc_adc_sun5i.ko
+   license:        GPL
+   description:    sun5i-keyboard driver
+   author:          <@>
+   depends:        
+   vermagic:       3.4.39 preempt mod_unload ARMv7 p2v8 
+-- symbols --
+_0 _1 _2 _3 _4 
+-- strings --
+   <3>sun5ikbd: not enough memory for input device
+   ==register_early_suspend =
+   _set_bit
+   aeabi
+   author= <@>
+   depends=
+   description=sun5i-keyboard driver
+   do_gettimeofday
+   free_irq
+   input_allocate_device
+   input_event
+   input_free_device
+   input_register_device
+   input_unregister_device
+   kmem_cache_alloc
+   license=GPL
+   malloc_sizes
+   printk
+   register_early_suspend
+   request irq failure. 
+   request_threaded_irq
+   standby_type
+   sun5i-keyboard
+   sun5ikbd
+   sun5ikbd/input0
+   unregister_early_suspend
+   zhc_adc_sun5i
+
+=== zhc_adc_nau8540.ko (8272 bytes) ===
+-- modinfo --
+   filename:       /mnt/c/Users/Administrator/Desktop/aku1/04_rootfs/rootfs/lib/modules/3.4.39/zhc_adc_nau8540.ko
+   license:        GPL
+   author:         lovemengx <zhangfuliang@teamco-operation.com>
+   description:    ASoC NAU85L40 driver
+   alias:          i2c:nau8540
+   depends:        
+   vermagic:       3.4.39 preempt mod_unload ARMv7 p2v8 
+-- symbols --
+_0 _1 _10 _11 _12 _13 _14 _15 _16 _2 _3 _4 _5 _6 _7 _8 _9 
+-- strings --
+    <--
+   /home/zhangfuliang/work/svn/tina_baymini/build_dir/target-arm_cortex-a8+neon_uClibc-0.9.33.2_eabi/linux-sun5i/zhc_adc_nau8540/zhc_adc_nau8540.c
+   0x%.2x  0x%.2x%.2x
+   <3>[ERROR!!!] [%s]Fun: %s  Line: %05d Set_Codec_Reg_Init  fail <--
+   <3>[ERROR!!!] [%s]Fun: %s  Line: %05d i2c_add_driver() failed <--
+   <3>[ERROR!!!] [%s]Fun: %s  Line: %05d i2c_client is NULL || buf is NULL 
+   <3>[ERROR!!!] [%s]Fun: %s  Line: %05d i2c_master_recv is fail <--
+   <3>[ERROR!!!] [%s]Fun: %s  Line: %05d i2c_master_send is fail <--
+   <3>[ERROR!!!] [%s]Fun: %s  Line: %05d no memory for kmalloc!
+   <3>[ERROR!!!] [%s]Fun: %s  Line: %05d zhc_i2c_read  fail <--
+   aeabi
+   alias=i2c:nau8540
+   author=lovemengx <zhangfuliang@teamco-operation.com>
+   depends=
+   description=ASoC NAU85L40 driver
+   i2c_del_driver
+   i2c_master_recv
+   i2c_master_send
+   i2c_register_driver
+   kfree
+   kmem_cache_alloc
+   license=GPL
+   malloc_sizes
+   misc_deregister
+   misc_register
+   nau8540
+   nau8540_Init
+   nau8540_ReadAllReg
+   nau8540_WriteReg
+   printk
+   strlcpy
+   zhc_adc_nau8540
+   zhc_i2c_read
+   zhc_i2c_write
+   zhc_nau8540
+   zhc_nau8540_init
+   zhc_power_ctrl
+
+=== zhc_drivers_script.ko (5728 bytes) ===
+-- modinfo --
+   filename:       /mnt/c/Users/Administrator/Desktop/aku1/04_rootfs/rootfs/lib/modules/3.4.39/zhc_drivers_script.ko
+   license:        GPL
+   depends:        
+   vermagic:       3.4.39 preempt mod_unload ARMv7 p2v8 
+-- symbols --
+_0 _1 _10 _2 _3 _4 _5 _6 _7 _8 _9 
+-- strings --
+    -->[%s] Fun:%s, Line:%05d,  <--
+    -->[%s] Fun:%s, Line:%05d, main_key_name = %s <--
+    -->[%s] Fun:%s, Line:%05d, matching [%s] ok!!! <--
+    -->[%s] Fun:%s, Line:%05d, not set register <--
+    -->[%s] Fun:%s, Line:%05d, reg_sel = 0x%x  value = 0x%x <--
+   /home/zhangfuliang/work/svn/tina_baymini/build_dir/target-arm_cortex-a8+neon_uClibc-0.9.33.2_eabi/linux-sun5i/zhc_drivers_script/zhc_drivers_script.c
+   0x%.8x
+   [%s]				= 
+   _kstrtoul
+   aeabi
+   chip_reg_dump
+   class_unregister
+   depends=
+   license=GPL
+   matching [%s] fail!!!
+   matching_sys_config
+   memcpy
+   memset
+   port:P%c%.2d<%d><%d><%d><%d>
+   printk
+   product
+   reg: 0x%x = 0x%x
+   reg_dump
+   reg_write
+   sprintf
+   strcmp
+   stript_dump
+   zhc_drivers_script
+   zhc_register_store
+   zhc_regwrite_store
+   zhc_script
+   zhc_script_exit
+   zhc_script_init
+   zhc_script_store

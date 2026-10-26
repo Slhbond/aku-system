@@ -1,0 +1,436 @@
+################ xxb_robot_sw_server
+--- URLs / endpoints ---
+http://api.qiniu.com
+http://bj.voicecloud.cn/msp.do
+http://resource.gowild.cn/
+http://rs.qiniu.com
+http://upload.qiniu.com
+http://www.gowild.cn#%s
+--- domains ---
+api.qiniu.com
+bj.voicecloud.cn
+resource.gowild.cn
+rs.qiniu.com
+upload.qiniu.com
+www.gowild.cn
+www.gowildweb.com
+--- ip / ports ---
+--- /dev nodes ---
+/dev/by-name/private
+/dev/fb0
+/dev/zhc_gpio
+--- /sys /proc ---
+/sys/class/zhc_version/zhc_os_version
+--- version-ish ---
+/sys/class/zhc_version/zhc_os_version
+HW_SERVER:OS:NEW_VERSION_FIND
+HW_SERVER:OS:NEW_VERSION_FOUND
+SA ADT Version 1.2 gama Branch Hfreq-16K
+VERSION
+get version failed
+get_fw_version
+get_version
+gw_check_new_version_upgrade
+gw_fw_version_report
+opkg info xxb-robot-swapp | grep Version
+sub=iat,smaple_rate=16000,aue=speex-wb,ent=smsfar16k,result_type=json,vad_enable=1,vad_bos=15000,vad_eos=500,sch=1,nlp_version=2.0
+version(%d) is invalid, use default value! 
+version:%s SSID:%s play_state:%d time_pos:%d volume:%d bluetoothstate:%d
+version:%s len=%ld
+
+################ xxb_robot_hw_server
+--- URLs / endpoints ---
+--- domains ---
+--- ip / ports ---
+--- /dev nodes ---
+--- /sys /proc ---
+--- version-ish ---
+HW_SERVER:OS:NEW_VERSION_FIND
+HW_SERVER:OS:NEW_VERSION_FOUND
+gw_cb_get_new_version_info
+libbt_server.so
+libgowild_battery_server.so
+libgw_download_server.so
+update_os_has_new_version
+
+################ libcae.so
+--- URLs / endpoints ---
+--- domains ---
+--- ip / ports ---
+1.0.3.100
+--- /dev nodes ---
+/dev/i2c-1
+--- /sys /proc ---
+--- version-ish ---
+CAEGetVersion
+IvwGetVersion
+bin_head version %d
+
+################ libmsc.so
+--- URLs / endpoints ---
+--- domains ---
+IV6.Tv
+Lua.org
+--- ip / ports ---
+3.0.0.106
+4.0.0.100
+5.0.23.112
+--- /dev nodes ---
+--- /sys /proc ---
+--- version-ish ---
+$LuaVersion: Lua 5.2.1  Copyright (C) 1994-2012 Lua.org, PUC-Rio $$LuaAuthors: R. Ierusalimschy, L. H. de Figueiredo, W. Celes $
+HPE_INVALID_VERSION
+MSPGetVersion
+_VERSION
+bad conversion number->int; must recompile Lua with proper settings
+iFlyFixFrontVersion = %s
+incompatible version
+invalid HTTP version
+uncompatible crypt version! %d, %d
+uncompatible sdk version! %s, %s
+version
+version mismatch: app. needs %f, Lua core provides %f
+
+################ libgowild_network_manager.so
+--- URLs / endpoints ---
+--- domains ---
+--- ip / ports ---
+--- /dev nodes ---
+--- /sys /proc ---
+--- version-ish ---
+
+################ libgowild_wifi.so
+--- URLs / endpoints ---
+--- domains ---
+--- ip / ports ---
+--- /dev nodes ---
+--- /sys /proc ---
+--- version-ish ---
+
+################ libgowild-hw-ipc.so
+--- URLs / endpoints ---
+--- domains ---
+--- ip / ports ---
+--- /dev nodes ---
+--- /sys /proc ---
+--- version-ish ---
+
+################ libgowild_battery_server.so
+--- URLs / endpoints ---
+--- domains ---
+--- ip / ports ---
+--- /dev nodes ---
+--- /sys /proc ---
+/sys/class/power_supply/ac/online
+/sys/class/power_supply/battery/capacity
+/sys/class/power_supply/battery/status
+/sys/class/power_supply/usb/online
+--- version-ish ---
+
+################ libgowild_keyevent.so
+--- URLs / endpoints ---
+--- domains ---
+--- ip / ports ---
+--- /dev nodes ---
+/dev/input
+--- /sys /proc ---
+--- version-ish ---
+
+################ libgowild_led.so
+--- URLs / endpoints ---
+--- domains ---
+--- ip / ports ---
+--- /dev nodes ---
+/dev/zhc_led
+--- /sys /proc ---
+--- version-ish ---
+
+################ libgw_os_update.so
+--- URLs / endpoints ---
+http://www.gowildweb.com:6120/common-web-client/rest/upgrade/getUpgradeInfo?softName=com.gowild.xxb.robot.aku.fw
+--- domains ---
+www.gowildweb.com
+--- ip / ports ---
+--- /dev nodes ---
+--- /sys /proc ---
+/sys/class/zhc_version/zhc_os_version
+--- version-ish ---
+/mnt/UDISK/misc-upgrade/ota_version
+/sys/class/zhc_version/zhc_os_version
+Donot upgrade if current os version is %d
+OS_VERSION: 
+buf:%s version=%d
+check_new_version
+download success %s, version=%d
+download_check_version
+fw_version_get_local
+fw_version_save_local
+get_fw_version
+libgw_download_server.so
+update_os_has_new_version
+
+################ libgw_download_server.so
+--- URLs / endpoints ---
+--- domains ---
+--- ip / ports ---
+--- /dev nodes ---
+--- /sys /proc ---
+--- version-ish ---
+Local version is newer than server
+Local version is older than server
+VERSION
+We have the newest APP(Version:%d) 
+download_check_version
+get_version
+opkg info %s | grep Version
+version
+version:%s version=%d
+versionCode
+
+################ data.tar
+--- URLs / endpoints ---
+http://%s:%d
+http://%s:%i
+http://api.qiniu.com
+http://bj.voicecloud.cn/msp.do
+http://codeczone.virtualave.net/FXIMCAUD.zip
+http://corecodec.org/
+http://elektron.its.tudelft.nl/~dalikifa/
+http://ffmpeg.org/bugreports.html
+http://lags.leetcode.net/codec.html,
+http://ns.adobe.com/creatorAtom/1.0/
+http://ns.adobe.com/xap/1.0/
+http://ns.adobe.com/xap/1.0/mm/
+http://ns.adobe.com/xap/1.0/sType/ResourceEvent#
+http://ns.adobe.com/xap/1.0/sType/ResourceRef#
+http://ns.adobe.com/xmp/1.0/DynamicMedia/
+http://purl.org/dc/elements/1.1/
+http://resource.gowild.cn/
+http://rs.qiniu.com
+http://upload.qiniu.com
+http://username:password@hostname/file
+http://wiki.multimedia.cx/index.php?title=VOBsub
+http://www.brynosaurus.com/cachedir/
+http://www.gowild.cn#%s
+http://www.midivid.com/codec/download.html
+http://www.mplayerhq.hu/
+http://www.oberhumer.com/opensource/lzo/
+http://www.theorie.physik.uni-goettingen.de/~ostreich/transcode/
+http://www.w3.org/1999/02/22-rdf-syntax-ns#
+http://www.w3.org/1999/xlink
+http://www.w3.org/2000/svg
+http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd
+http://xanim.va.pubnix.com/)
+--- domains ---
+ACELP.NET
+ACELP.net
+Acelp.net
+IV6.Tv
+Lua.org
+api.qiniu.com
+bj.voicecloud.cn
+codeczone.virtualave.net
+corecodec.org
+daviesfam.org
+ffmpeg.org
+ffmpeg.sf.net
+hotmail.com
+lags.leetcode.net
+lokigames.com
+nicewarrior.org
+ns.adobe.com
+purl.org
+resource.gowild.cn
+robertk.com
+rs.qiniu.com
+server.net
+upload.ffmpeg.org
+upload.qiniu.com
+users.sourceforge.net
+waveletvideo.freeservers.com
+www.brynosaurus.com
+www.gowild.cn
+www.gowildweb.com
+www.midivid.com
+www.oberhumer.com
+www.theora.org
+www.w3.org
+xanim.va.pubnix.com
+--- ip / ports ---
+0.0.0.0
+0.9.33.2
+1.0.3.100
+127.0.0.1
+192.168.0.1
+224.2.127.254
+25.136.246.046
+3.0.0.106
+4.0.0.100
+4.1.0.385
+5.0.23.112
+6.0.6.45
+6.0.9.123
+6.259.379.079
+7.0.0.195
+--- /dev nodes ---
+/dev/by-name/private
+/dev/cdrom
+/dev/dvb/adapter
+/dev/dvd
+/dev/fb0
+/dev/hdc
+/dev/i2c-1
+/dev/input/event
+/dev/null
+/dev/random
+/dev/rtc
+/dev/rtc/max-user-freq
+/dev/tty
+/dev/urandom
+/dev/vcsa
+/dev/video0
+/dev/video16
+/dev/videoX
+/dev/zero
+/dev/zhc_gpio
+--- /sys /proc ---
+/proc/sys/dev/rtc/max-user-freq
+/sys/class/zhc_version/zhc_os_version
+--- version-ish ---
+  gcc version. If you think it's MPlayer's fault, please read
+ <desc>QR Code (version=%d, ecl=%s%s)</desc>
+$LuaVersion: Lua 5.2.1  Copyright (C) 1994-2012 Lua.org, PUC-Rio $$LuaAuthors: R. Ierusalimschy, L. H. de Figueiredo, W. Celes $
+%s not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+(EBML version %llu, doctype %s, doc version %llu)
+, %d total encoded bits (max %d bits on version=%d, ecl=%s)
+, %d total encoded bits (max %d bits on version=%d, ecl=%s, num=%d)
+/sys/class/zhc_version/zhc_os_version
+1bpp bitmap -> YUV/BGR 8/15/16/32 conversion
+8bpp indexed (using palette) -> BGR 15/16/24/32 conversion
+<?xml version="1.0" standalone="no"?>
+<svg width="%d" height="%d" version="1.1"
+CAEGetVersion
+Can demux Musepack SV7, got version %02X
+DirectFB: Unsupported DirectFB version
+
+########## XXB SW SERVER: full interesting strings ##########
+-open file failed
+/dev/zhc_gpio
+/mnt/UDISK/.gowild_config/emotion_conf
+/mnt/UDISK/.gowild_config/voice/alarm.mp3
+/mnt/UDISK/.gowild_config/voice/battery/battery_empty.mp3
+/mnt/UDISK/.gowild_config/voice/battery/battery_full.mp3
+/mnt/UDISK/.gowild_config/voice/battery/battery_low.mp3
+/mnt/UDISK/.gowild_config/voice/hmm/hmm_alarm.mp3
+/mnt/UDISK/.gowild_config/voice/hmm/hmm_remind.mp3
+/mnt/UDISK/.gowild_config/voice/hmm/hmm_startup.mp3
+/mnt/UDISK/.gowild_config/voice/network/connect_auth_failed.wav
+/mnt/UDISK/.gowild_config/voice/network/connect_success.wav
+/mnt/UDISK/.gowild_config/voice/network/connecting.wav
+/mnt/UDISK/.gowild_config/voice/network/di.wav
+/mnt/UDISK/.gowild_config/voice/network/disconnect_wifi_by_key.wav
+/mnt/UDISK/.gowild_config/voice/network/network_is_slow.wav
+/mnt/UDISK/.gowild_config/voice/network/no_network_connected_when_startup.wav
+/mnt/UDISK/.gowild_config/voice/network/soundlink_broken.wav
+/mnt/UDISK/.gowild_config/voice/network/soundlink_timeout.wav
+/mnt/UDISK/.gowild_config/voice/network/ssid_is_not_found.wav
+/mnt/UDISK/.gowild_config/voice/network/wifi_disconnect_auto.wav
+/mnt/UDISK/.gowild_config/voice/tts_wakeup_no_network.wav
+/mnt/UDISK/.gowild_config/voice/tts_wakeup_random%d.wav
+/mnt/UDISK/.gowild_config/voice/wdl/alarm_wdl.mp3
+/mnt/UDISK/.gowild_config/voice/wdl/remind_wdl_not.mp3
+/mnt/UDISK/.gowild_config/voice/wdl/startup_wdl.mp3
+/mnt/UDISK/.gowild_config/voice/ximei/0.wav
+/mnt/UDISK/.gowild_config/voice/ximei/1.wav
+/mnt/UDISK/.gowild_config/voice/ximei/2.wav
+/mnt/UDISK/.gowild_config/voice/ximei/3.wav
+/mnt/UDISK/.gowild_config/voice/ximei/4.wav
+/mnt/UDISK/.gowild_config/voice/ximei/6.mp3
+/private/ULI/factory/snum.txt
+/tmp/meidaplayer.ipc
+/wakeupresource.jet
+AAAAAAAAAAAA player command finish
+AlarmUpdateForXXBSMsg
+Audio info set failed, info is NULL
+Authorization: UpToken 
+BBBBBBBBplayer command:%d state=%d
+BOTTLE_PLAY_OVER
+CAEAudioWrite
+CAEDestroy
+CAENew
+CAENew Failed,error=%d
+CAENew...
+CAEResetEng
+COMMAND_VOICE_SERVER
+CONNECT FAILED
+Capacity=%s battery_online=%d ip_ximei=%d
+Destory general player
+Donot change emotion
+Donot play because of bt connected
+Donot play guide when wangdalu start up
+FPGA Chip init failed
+GW_RECORD  
+Get volume failed
+HW_SERVER:BATTERY:CAPA:
+HW_SERVER:BATTERY:CHARGE
+HW_SERVER:BATTERY:DISCHARGE
+HW_SERVER:BATTERY:EMPTY
+HW_SERVER:BATTERY:FULL
+HW_SERVER:BATTERY:LOW
+HW_SERVER:BATTERY:POWEROFF
+HW_SERVER:OS:UPDATE_FAILED
+HW_SERVER:WIFI:CONNECT_FAILED_STARTUP
+HW_SERVER:WIFI:PASSWORD_FAILED
+IP XIMEI emotion_id=%d buf_len=%d
+Init audio info failed
+MACHINE_UPDATE_COMMENT
+MACHINE_UPDATE_INFO
+MACHINE_UPDATE_UPTODATE
+MACHINE_UPDATE_WARNING
+MSPLogin failed,error code=%d
+Malloc memery failed
+OP:Play=%d pause %d
+OP:Play=%d playing %d
+Pause because of record
+Pause because of user play pause
+Pause because of wakeup
+PlayMusicInfoMsg
+PlayStoryInfoMsg
+QISRAudioWrite failed! error code:%d
+QISRGetResult failed! error code: %d
+QISRGetResult failed, error code: %d
+QISRSessionBegin failed! error code:%d
+QTTSAudioGet
+QTTSAudioGet failed, error code: %d.
+QTTSSessionBegin
+QTTSSessionBegin failed, error code: %d.
+QTTSSessionEnd
+QTTSSessionEnd failed, error code: %d.
+QTTSTextPut
+QTTSTextPut failed, error code: %d.
+RECORDING
+RECORD_END
+Record finish
+Record type = %d
+RemindUpdateForXXBSMsg
+RemindUpdateForXXBSmsg is NULL
+ResumableBlockput %d off:%d failed - %E
+Resume info:media_type=%d, player_type=%d, time_pos_ms=%d, url=%s
+Resume play
+SN is unknown
+STATE_VOICE_SERVER
+SW_SERVER:MEDIAPLAYER:START
+SW_SERVER:RECORD:START
+SW_SERVER:RECORD:STOP
+Save info:type=%d, player_type=%d, time_pos_ms=%d, url=%s
+Save volume failed
+Set info:media_type=%d, player_type=%d, time_pos_ms=%d, url=%s
+Start play %s
+Stop because of play new audio
+Stop playing
+Stop record
+TTS file:%s
+Time length update failed, info is NULL
+Time position update failed, info is NULL
+VOICE_STATE_ISR_RESULT
+VOICE_STATE_TTS_FILE

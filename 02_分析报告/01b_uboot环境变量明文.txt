@@ -1,0 +1,25 @@
+# U-Boot 环境变量（env 分区原始解码）
+# 来源: 00_raw/env_backup.bin  (4 MiB, 原始 U-Boot environment 保存区)
+# 数据结构: [0x00..0x03] CRC32 (LE)  [0x04..] 以 '\0' 分隔的 key=value 列表
+# 存储的 CRC32 = 0x08261FEA；末尾直接就是第一个变量（'bootdelay=1'）
+# 实测 CRC32 与数据不匹配 → 该 env 是被导出/半写入的现场数据（内容有效，校验值失效）
+# 共 18 个变量：
+
+bootdelay=1
+bootcmd=run setargs_nand boot_normal
+nor_root=/dev/mtdblock4
+console=ttyS0,115200
+nand_root=/dev/nandd
+mmc_root=/dev/mmcblk0p7
+init=/etc/preinit
+loglevel=8
+setargs_nor=setenv bootargs console=${console} root=${nor_root} rootwait init=${init} ion_cma_512m=32m ion_cma_1g=176m ion_carveout_512m=32m ion_carveout_1g=150m coherent_pool=4m loglevel=${loglevel} partitions=${partitions}
+setargs_nand=setenv bootargs console=${console} root=${nand_root} rootwait init=${init} ion_cma_512m=32m ion_cma_1g=176m ion_carveout_512m=32m ion_carveout_1g=150m coherent_pool=4m loglevel=${loglevel} partitions=${partitions}
+setargs_mmc=setenv bootargs console=${console} root=${mmc_root} rootwait init=${init} ion_cma_512m=32m ion_cma_1g=176m ion_carveout_512m=32m ion_carveout_1g=150m coherent_pool=4m loglevel=${loglevel} partitions=${partitions}
+boot_normal=fatload sunxi_flash 2 40100000 uImage;bootm 40100000
+boot_recovery=fatload sunxi_flash 5 40100000 uImage;bootm 40100000
+boot_fastboot=fastboot
+recovery_key_value_max=0x13
+recovery_key_value_min=0x10
+fastboot_key_value_max=0x8
+fastboot_key_value_min=0x2
